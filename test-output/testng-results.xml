@@ -1,42 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="12" passed="9" failed="0" skipped="3">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-07-10T13:27:50 IST" name="Default suite" finished-at="2024-07-10T13:27:55 IST" duration-ms="5358">
+  <suite started-at="2024-07-24T18:53:12 IST" name="Suite" finished-at="2024-07-24T18:54:03 IST" duration-ms="51405">
     <groups>
     </groups>
-    <test started-at="2024-07-10T13:27:50 IST" name="Default test" finished-at="2024-07-10T13:27:55 IST" duration-ms="5358">
-      <class name="sikuli.SikuliWindow">
-        <test-method signature="start()[pri:0, instance:sikuli.SikuliWindow@23f5b5dc]" started-at="2024-07-10T13:27:50 IST" name="start" finished-at="2024-07-10T13:27:55 IST" duration-ms="5307" status="FAIL">
-          <exception class="org.sikuli.script.FindFailed">
+    <test started-at="2024-07-24T18:53:12 IST" name="Test" finished-at="2024-07-24T18:53:12 IST" duration-ms="96">
+      <class name="crossBrowserTesting.CrossBrowsing">
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:crossBrowserTesting.CrossBrowsing@130c12b7]" started-at="2024-07-24T18:53:12 IST" name="openBrowser" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1721827392278" status="FAIL">
+          <exception class="org.testng.TestNGException">
             <message>
-              <![CDATA[C:\Users\licious.DESKTOP-SSHCSEN\OneDrive\Text Book\screenshot\win.png: (49x42) in R[0,0 1280x720]@S(0)]]>
+              <![CDATA[
+Parameter 'browser' is required by BeforeTest on method openBrowser but has not been marked @Optional or defined
+in C:\Users\licious.DESKTOP-SSHCSEN\eclipse-workspace\Automation\testng.xml]]>
             </message>
             <full-stacktrace>
-              <![CDATA[FindFailed: C:\Users\licious.DESKTOP-SSHCSEN\OneDrive\Text Book\screenshot\win.png: (49x42) in R[0,0 1280x720]@S(0)
-  Line 2226, in file Region.java
-
-at org.sikuli.script.Region.wait(Region.java:2226)
-at org.sikuli.script.Region.wait(Region.java:2244)
-at org.sikuli.script.Region.getLocationFromTarget(Region.java:3298)
-at org.sikuli.script.Region.click(Region.java:3916)
-at org.sikuli.script.Region.click(Region.java:3892)
-at sikuli.SikuliWindow.start(SikuliWindow.java:13)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'browser' is required by BeforeTest on method openBrowser but has not been marked @Optional or defined
+in C:\Users\licious.DESKTOP-SSHCSEN\eclipse-workspace\Automation\testng.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:270)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
+at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+at org.testng.TestRunner.run(TestRunner.java:589)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
 at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
 at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
@@ -52,11 +41,206 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.sikuli.script.FindFailed -->
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- start -->
-      </class> <!-- sikuli.SikuliWindow -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- openBrowser -->
+        <test-method signature="edge()[pri:0, instance:crossBrowserTesting.CrossBrowsing@130c12b7]" started-at="2024-07-24T18:53:12 IST" name="edge" finished-at="2024-07-24T18:53:12 IST" duration-ms="0" status="SKIP">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'browser' is required by BeforeTest on method openBrowser but has not been marked @Optional or defined
+in C:\Users\licious.DESKTOP-SSHCSEN\eclipse-workspace\Automation\testng.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'browser' is required by BeforeTest on method openBrowser but has not been marked @Optional or defined
+in C:\Users\licious.DESKTOP-SSHCSEN\eclipse-workspace\Automation\testng.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:270)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
+at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+at org.testng.TestRunner.run(TestRunner.java:589)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- edge -->
+        <test-method signature="firefox()[pri:0, instance:crossBrowserTesting.CrossBrowsing@130c12b7]" started-at="2024-07-24T18:53:12 IST" name="firefox" finished-at="2024-07-24T18:53:12 IST" duration-ms="0" status="SKIP">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'browser' is required by BeforeTest on method openBrowser but has not been marked @Optional or defined
+in C:\Users\licious.DESKTOP-SSHCSEN\eclipse-workspace\Automation\testng.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'browser' is required by BeforeTest on method openBrowser but has not been marked @Optional or defined
+in C:\Users\licious.DESKTOP-SSHCSEN\eclipse-workspace\Automation\testng.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:270)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
+at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+at org.testng.TestRunner.run(TestRunner.java:589)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- firefox -->
+        <test-method signature="google()[pri:0, instance:crossBrowserTesting.CrossBrowsing@130c12b7]" started-at="2024-07-24T18:53:12 IST" name="google" finished-at="2024-07-24T18:53:12 IST" duration-ms="0" status="SKIP">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'browser' is required by BeforeTest on method openBrowser but has not been marked @Optional or defined
+in C:\Users\licious.DESKTOP-SSHCSEN\eclipse-workspace\Automation\testng.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'browser' is required by BeforeTest on method openBrowser but has not been marked @Optional or defined
+in C:\Users\licious.DESKTOP-SSHCSEN\eclipse-workspace\Automation\testng.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:270)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
+at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+at org.testng.TestRunner.run(TestRunner.java:589)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- google -->
+      </class> <!-- crossBrowserTesting.CrossBrowsing -->
+    </test> <!-- Test -->
+    <test started-at="2024-07-24T18:53:12 IST" name="FirefoxBrowserTCs" finished-at="2024-07-24T18:53:39 IST" duration-ms="26666">
+      <class name="crossBrowserTesting.CrossBrowsing">
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:crossBrowserTesting.CrossBrowsing@8f2ef19]" started-at="2024-07-24T18:53:12 IST" name="openBrowser" finished-at="2024-07-24T18:53:27 IST" duration-ms="15315" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method signature="edge()[pri:0, instance:crossBrowserTesting.CrossBrowsing@8f2ef19]" started-at="2024-07-24T18:53:27 IST" name="edge" finished-at="2024-07-24T18:53:29 IST" duration-ms="1397" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- edge -->
+        <test-method signature="firefox()[pri:0, instance:crossBrowserTesting.CrossBrowsing@8f2ef19]" started-at="2024-07-24T18:53:29 IST" name="firefox" finished-at="2024-07-24T18:53:35 IST" duration-ms="5890" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- firefox -->
+        <test-method signature="google()[pri:0, instance:crossBrowserTesting.CrossBrowsing@8f2ef19]" started-at="2024-07-24T18:53:35 IST" name="google" finished-at="2024-07-24T18:53:39 IST" duration-ms="4053" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- google -->
+      </class> <!-- crossBrowserTesting.CrossBrowsing -->
+    </test> <!-- FirefoxBrowserTCs -->
+    <test started-at="2024-07-24T18:53:39 IST" name="ChromeBrowserTestCases" finished-at="2024-07-24T18:53:51 IST" duration-ms="12611">
+      <class name="crossBrowserTesting.CrossBrowsing">
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:crossBrowserTesting.CrossBrowsing@74ea2410]" started-at="2024-07-24T18:53:39 IST" name="openBrowser" finished-at="2024-07-24T18:53:41 IST" duration-ms="2534" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[GoogleChrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method signature="edge()[pri:0, instance:crossBrowserTesting.CrossBrowsing@74ea2410]" started-at="2024-07-24T18:53:41 IST" name="edge" finished-at="2024-07-24T18:53:43 IST" duration-ms="1491" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- edge -->
+        <test-method signature="firefox()[pri:0, instance:crossBrowserTesting.CrossBrowsing@74ea2410]" started-at="2024-07-24T18:53:43 IST" name="firefox" finished-at="2024-07-24T18:53:48 IST" duration-ms="5076" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- firefox -->
+        <test-method signature="google()[pri:0, instance:crossBrowserTesting.CrossBrowsing@74ea2410]" started-at="2024-07-24T18:53:48 IST" name="google" finished-at="2024-07-24T18:53:51 IST" duration-ms="3504" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- google -->
+      </class> <!-- crossBrowserTesting.CrossBrowsing -->
+    </test> <!-- ChromeBrowserTestCases -->
+    <test started-at="2024-07-24T18:53:51 IST" name="EdgeBrowserTestCases" finished-at="2024-07-24T18:54:03 IST" duration-ms="11795">
+      <class name="crossBrowserTesting.CrossBrowsing">
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:crossBrowserTesting.CrossBrowsing@248e319b]" started-at="2024-07-24T18:53:51 IST" name="openBrowser" finished-at="2024-07-24T18:53:54 IST" duration-ms="2405" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method signature="edge()[pri:0, instance:crossBrowserTesting.CrossBrowsing@248e319b]" started-at="2024-07-24T18:53:54 IST" name="edge" finished-at="2024-07-24T18:53:56 IST" duration-ms="1922" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- edge -->
+        <test-method signature="firefox()[pri:0, instance:crossBrowserTesting.CrossBrowsing@248e319b]" started-at="2024-07-24T18:53:56 IST" name="firefox" finished-at="2024-07-24T18:53:59 IST" duration-ms="3043" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- firefox -->
+        <test-method signature="google()[pri:0, instance:crossBrowserTesting.CrossBrowsing@248e319b]" started-at="2024-07-24T18:53:59 IST" name="google" finished-at="2024-07-24T18:54:03 IST" duration-ms="4407" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- google -->
+      </class> <!-- crossBrowserTesting.CrossBrowsing -->
+    </test> <!-- EdgeBrowserTestCases -->
+  </suite> <!-- Suite -->
 </testng-results>

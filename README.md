@@ -1,2 +1,0 @@
-# Automation
-Software Testing Project

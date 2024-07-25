@@ -3,11 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="sikuli.SikuliWindow">
+      <class name="crossBrowserTesting.CrossBrowsing">
         <methods>
-          <include name="start"/>
+          <include name="aftertest"/>
+          <include name="edge"/>
+          <include name="google"/>
+          <include name="firefox"/>
+          <include name="openBrowser"/>
         </methods>
-      </class> <!-- sikuli.SikuliWindow -->
+      </class> <!-- crossBrowserTesting.CrossBrowsing -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

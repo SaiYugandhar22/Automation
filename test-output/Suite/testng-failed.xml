@@ -2,18 +2,15 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
-    <groups>
-      <run>
-        <include name="food"/>
-      </run>
-    </groups>
     <classes>
-      <class name="testNG.TestNG_Different_pacakges">
+      <class name="crossBrowserTesting.CrossBrowsing">
         <methods>
-          <include name="swiggy"/>
-          <include name="zomato"/>
+          <include name="edge"/>
+          <include name="google"/>
+          <include name="firefox"/>
+          <include name="openBrowser"/>
         </methods>
-      </class> <!-- testNG.TestNG_Different_pacakges -->
+      </class> <!-- crossBrowserTesting.CrossBrowsing -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
