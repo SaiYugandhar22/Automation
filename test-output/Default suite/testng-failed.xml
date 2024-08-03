@@ -3,15 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="crossBrowserTesting.CrossBrowsing">
+      <class name="versions.VersionOfTools">
         <methods>
-          <include name="aftertest"/>
-          <include name="edge"/>
-          <include name="google"/>
-          <include name="firefox"/>
-          <include name="openBrowser"/>
+          <include name="selenium"/>
+          <include name="beforeTest"/>
         </methods>
-      </class> <!-- crossBrowserTesting.CrossBrowsing -->
+      </class> <!-- versions.VersionOfTools -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
