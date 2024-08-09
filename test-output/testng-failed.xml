@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="versions.VersionOfTools">
+      <class name="fitpeo.FitepeoAssignment">
         <methods>
-          <include name="selenium"/>
+          <include name="afterTest"/>
           <include name="beforeTest"/>
+          <include name="fitpeoooooo"/>
         </methods>
-      </class> <!-- versions.VersionOfTools -->
+      </class> <!-- fitpeo.FitepeoAssignment -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
